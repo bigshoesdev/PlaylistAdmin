@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="coelix.bytesbay.playlist" version="1.2.21" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Playlist</name>
+    <description>
+        A game for kids
+    </description>
+    <author email="bytesbay@icloud.com" href="http://coelix.com">
+        Coelix Team (by @bytesbay)
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="*" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="https://*youtube.com/*" />
+    <icon src="resources/icon.png" />
+
+    <preference name="Orientation" value="portrait" />
+    <plugin name="nl.madebymark.share" spec="~0.1.1" />
+    <plugin name="cordova-plugin-facebook4" spec="4.2.1">
+        <variable name="APP_ID" value="269566853940695" />
+        <variable name="APP_NAME" value="Playlist" />
+        <variable name="FACEBOOK_HYBRID_APP_EVENTS" value="false" />
+        <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.40.0" />
+    </plugin>
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="ios">
+        <splash src="resources/Default@2x~universal~anyany.png" />
+        <custom-config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
+            <true />
+        </custom-config-file>
+        <custom-config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+            <false />
+        </custom-config-file>
+        <preference name="deployment-target" value="11.0" />
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="res/icon/ios/icon-60@3x.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="res/icon/ios/icon-60.png" width="60" height="60" />
+        <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" />
+        <icon src="res/icon/ios/icon-60@3x.png" />
+        <!-- iPad -->
+        <icon src="res/icon/ios/icon-76.png" width="76" height="76" />
+        <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
+        <!-- iOS 6.1 -->
+        <!-- Spotlight Icon -->
+        <icon src="res/icon/ios/icon-40.png" width="40" height="40" />
+        <icon src="res/icon/ios/icon-40@2x.png" width="80" height="80" />
+        <!-- iPhone / iPod Touch -->
+        <icon src="res/icon/ios/icon.png" width="57" height="57" />
+        <icon src="res/icon/ios/icon@2x.png" width="114" height="114" />
+        <!-- iPad -->
+        <icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+        <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" />
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="res/icon/ios/icon-small.png" width="29" height="29" />
+        <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58" />
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="res/icon/ios/icon-50.png" width="50" height="50" />
+        <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" />
+    </platform>
+    <platform name="android">
+        <preference name="deployment-target" value="6.0" />
+    </platform>
+    <plugin name="cordova-custom-config" spec="5.1.0" />
+    <plugin name="phonegap-plugin-mobile-accessibility" spec="https://github.com/phonegap/phonegap-mobile-accessibility.git" />
+    <preference name="target-device" value="handset" />
+</widget>

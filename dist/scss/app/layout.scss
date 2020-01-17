@@ -1,0 +1,153 @@
+:focus { outline: none; }
+::-moz-focus-inner { border: 0; }
+::placeholder { color: #acaeb9; opacity: 1; }
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+}
+
+@font-face {
+  src: url(../fonts/FbArtishok-Bold.otf);
+  font-family: 'App';
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  src: url(../fonts/FbArtishok-Regular.otf);
+  font-family: 'App';
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  min-width: 320px;
+  color: $clr-wet;
+  font-family: 'App', sans-serif;
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-user-select: none;
+  // -ms-touch-action: manipulation;
+  // touch-action: manipulation;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;/* stop ios zooming text  on orientation change */
+	-ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+#app {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  // padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+#content {
+  overflow-x: hidden;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #00f;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bg-img {
+  background-color: #eee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  vertical-align: middle;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+.v--modal {
+  border-radius: 10px !important;
+  text-align: unset !important;
+}
+
+.animated {
+  animation-duration: 0.3s;
+}
+
+.elipsed {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.v--modal-overlay .v--modal-box {
+  overflow: visible !important;
+}
+
+.VueCarousel-dot-button {
+  // background-color: #fff !important;
+  border: 2px solid #fff !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.VueCarousel-dot.VueCarousel-dot--active {
+  background-color: $clr-wet !important;
+  border: 1px solid #fff !important;
+  padding: 0 !important;
+  margin: 10px !important;
+  margin-top: 30px !important;
+}
+.vue-slider-component .vue-slider {
+  background: #fff !important;
+}
+.vue-slider-component .vue-slider-dot .vue-slider-dot-handle {
+  box-shadow: none !important;
+  border: 2px solid $clr-wet !important;
+}
+.vue-slider-component .vue-slider-process {
+  background-color: $clr-wet !important;
+}
+
+.sm-cont {
+  max-width: 460px;
+  margin: 0 auto;
+}

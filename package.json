@@ -1,0 +1,78 @@
+{
+  "name": "com.f1lt3r.hybridbase",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.18",
+    "cross-env": "^5.1",
+    "deepmerge": "^4.2.2",
+    "fibers": "^4.0.2",
+    "jquery": "^3.2",
+    "laravel-mix": "^3.0.0",
+    "lodash": "^4.17.4",
+    "sass": "^1.23.3",
+    "sass-loader": "^7.3.1",
+    "vue": "^2.6.6"
+  },
+  "dependencies": {
+    "ajv": "^6.9.1",
+    "animate.css": "^3.7.0",
+    "bulma": "^0.7.4",
+    "cordova-android": "^7.1.4",
+    "cordova-custom-config": "5.1.0",
+    "cordova-ios": "^5.0.0",
+    "cordova-plugin-device": "git+https://github.com/apache/cordova-plugin-device.git",
+    "cordova-plugin-facebook4": "4.2.1",
+    "cordova-plugin-network-information": "git+https://github.com/apache/cordova-plugin-network-information.git",
+    "cordova-plugin-share": "^0.1.3",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "i": "^0.3.6",
+    "imagemin": "^6.1.0",
+    "img-loader": "^3.0.1",
+    "normalize.css": "^8.0.1",
+    "npm": "^6.7.0",
+    "phonegap-plugin-mobile-accessibility": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git",
+    "v-mask": "^1.3.3",
+    "vue-carousel": "^0.17.0",
+    "vue-click-outside": "^1.0.7",
+    "vue-color": "^2.7.0",
+    "vue-cookie": "^1.1.4",
+    "vue-filter-date-format": "^1.1.5",
+    "vue-js-modal": "^1.3.28",
+    "vue-router": "^3.0.2",
+    "vue-slider-component": "^2.8.14",
+    "vuetify": "^1.5.20",
+    "vuex": "^3.1.0"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "nl.madebymark.share": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "269566853940695",
+        "APP_NAME": "Playlist",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ANDROID_SDK_VERSION": "4.40.0"
+      },
+      "cordova-custom-config": {},
+      "phonegap-plugin-mobile-accessibility": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
